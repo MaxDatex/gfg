@@ -1,3 +1,8 @@
+'''
+Given an array of integers nums and a number k, write a function that returns true if given array can be divided into pairs such that sum of every pair is divisible by k.
+'''
+
+
 from collections import defaultdict
 
 class Solution:
