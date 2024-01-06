@@ -1,3 +1,9 @@
+'''
+Given an array of integers arr[] of length N, every element appears thrice except for one which occurs once.
+Find that element which occurs once.
+'''
+
+
 class Solution:
     def singleElement(self, arr, N):
         
