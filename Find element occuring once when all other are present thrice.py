@@ -3,7 +3,7 @@ Given an array of integers arr[] of length N, every element appears thrice excep
 Find that element which occurs once.
 '''
 
-
+# Works only for positive numbers
 class Solution:
     def singleElement(self, arr, N):
         
@@ -17,4 +17,15 @@ class Solution:
                     count += 1
             if count % 3 == 1:
                 ans += 1 << i
-        return ans
+        return and
+
+# ==================================
+
+class Solution:
+    def singleElement(self, arr, N):
+        arr.sort()
+        
+        for i in range(0, N-2, 3):
+            if arr[i] != arr[i+2]:
+                return arr[i]
+        return arr[N-1]
